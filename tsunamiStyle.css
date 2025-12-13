@@ -1,0 +1,13 @@
+body{
+ background-color: green;
+    color: greenyellow;
+    font-family: 1em monospace;
+}
+section{
+    margin: 2em;
+    padding: 2em;
+    border: 0.2em solid greenyellow;
+    background-color: green;
+    color: greenyellow;
+    font-family: 1em monospace;
+}
