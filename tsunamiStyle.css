@@ -14,8 +14,8 @@ body {
 }
 
 header {
-    background-color: #ffffff;
-    color: #212529;
+    background-color: #9633c5;
+    color: #e1ecf7;
     padding: 1rem 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -25,10 +25,28 @@ header {
 
 header h1 {
     color: #875A7B;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-align: center;
+}
+
+header .subtitle {
+    color: #6c757d;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+header .header-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: #495057;
+    margin-top: 1rem;
 }
 
 nav {
@@ -95,6 +113,141 @@ section p {
     color: #4c4c4c;
     font-size: 1.05rem;
     line-height: 1.8;
+}
+
+section h3 {
+    color: #875A7B;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+section h4 {
+    color: #714B67;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+section ul, section ol {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+section code {
+    background-color: #f4f4f4;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    color: #875A7B;
+    font-size: 0.95rem;
+}
+
+/* Inhaltsverzeichnis Styling */
+.toc-section {
+    background-color: #f8f9fa;
+    border-left: 4px solid #875A7B;
+}
+
+.toc {
+    margin-top: 1.5rem;
+}
+
+.toc ol {
+    counter-reset: item;
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.toc > ol {
+    margin-left: 0;
+}
+
+.toc ol > li {
+    counter-increment: item;
+    margin-bottom: 0.8rem;
+}
+
+.toc ol > li:before {
+    content: counters(item, ".") ". ";
+    font-weight: 600;
+    color: #875A7B;
+    margin-right: 0.5rem;
+}
+
+.toc a {
+    color: #212529;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1rem;
+}
+
+.toc a:hover {
+    color: #875A7B;
+    text-decoration: underline;
+}
+
+.toc ol ol {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Info Boxes */
+.info-box, .success-box, .deployment-box {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid;
+}
+
+.info-box {
+    background-color: #e7f3ff;
+    border-left-color: #2196F3;
+}
+
+.info-box h5 {
+    color: #1976D2;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.success-box {
+    background-color: #e8f5e9;
+    border-left-color: #4CAF50;
+}
+
+.success-box h5 {
+    color: #2E7D32;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.deployment-box {
+    background-color: #f3e5f5;
+    border-left-color: #875A7B;
+}
+
+.deployment-box h5 {
+    color: #875A7B;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.info-box ul, .success-box ul, .deployment-box ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.info-box li, .success-box li, .deployment-box li {
+    margin-bottom: 0.4rem;
 }
 
 footer {
