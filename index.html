@@ -87,10 +87,11 @@
             <h2>1. Einleitung</h2>
             
             <h3 id="projektumfeld">1.1 Projektumfeld</h3>
-            <p>Das Projekt ist eingebettet in ein Odoo 18 ERP-System. Unternehmen mit eigenem Fuhrpark stehen oft vor der Herausforderung, dass die Bestandsführung an der Laderampe endet. Sobald Ware verladen ist, verschwindet sie oft aus dem direkten Zugriff des Lagerverwaltungssystems, bis sie beim Kunden ankommt.</p>
+            <p>Das Projekt ist eingebettet in ein Odoo 18 ERP-System. Unternehmen mit eigenem Fuhrpark stehen oft vor der Herausforderung, dass die Bestandsführung an der Laderampe endet. Sobald Ware verladen ist, verschwindet sie oft aus dem direkten Zugriff des Lagerverwaltungssystems, bis sie beim Kunden ankommt. Wege zwischen Lager und Kunde werden nicht dargestellt.<br>
+            Mit Disposition Management soll diese Lücke geschlossen werden, denn das Controlling des Fuhrparks, der Ware und der Mitarbeiter ist für ein zuverlässiges und transparentes Unternehmen von großer Bedeutung.</p>
 
             <h3 id="projektziel">1.2 Projektziel</h3>
-            <p>Ziel des Projekts ist die Entwicklung des Odoo-Moduls <code>disposition_management</code>. Dieses Modul soll die Lücke zwischen Fuhrparkmanagement (<code>fleet</code>) und Lagerverwaltung (<code>stock</code>) schließen. Kernstück ist die Abbildung von Fahrzeugen (LKWs, Anhänger) als "Mobile Lagerorte", um eine durchgängige Bestandsführung und Kapazitätsplanung zu ermöglichen.</p>
+            <p>Ziel des Projekts ist die Entwicklung des Odoo-Moduls <code>disposition_management</code>. Dieses Modul soll die Lücke zwischen Fuhrparkmanagement (<code>fleet</code>) und Lagerverwaltung (<code>stock</code>) schließen. Kernstück ist die Abbildung von Fahrzeugen (LKWs, Anhänger) als "Mobile Lagerorte", um eine durchgängige Bestandsführung und Kapazitätsplanung zu ermöglichen. Dies bietet die Grundlage für eine verbesserte Transparenz und Effizienz in der Logistik.</p>
 
             <h3 id="zielgruppe">1.3 Zielgruppe</h3>
             <ul>
@@ -105,7 +106,8 @@
             <h2>2. Ist-Analyse und Soll-Konzept</h2>
             
             <h3 id="ist-zustand">2.1 Ist-Zustand</h3>
-            <p>Im Standard-Odoo existieren die Apps "Fuhrpark" und "Lager" getrennt voneinander.</p>
+            <p>Im Standard-Odoo existieren die Apps "Fuhrpark" und "Lager" getrennt voneinander. Auch ist standardmäßig keine Auswahl von Fahrzeugen möglich, die als Transportmittel für Waren geeignet währen. Aus meiner Sicht ist es befremdlich, 33 Europaletten in ein "Auto" zu laden. <br>
+            Fahrzeuge wie Trucks und Anhänger, sind nicht vorhanden und können nicht als solche genutzt werden. Hinzu kommt, dass man bei der Verladung auf Fremdfahrzeuge gänzlich den Überblick verliert und nicht zeitnah auf Eventualitäten reagieren kann.</p>
             <ul>
                 <li>Fahrzeuge sind reine Verwaltungsobjekte (Kosten, Verträge).</li>
                 <li>Lagerbewegungen enden typischerweise am Warenausgang "Output".</li>
