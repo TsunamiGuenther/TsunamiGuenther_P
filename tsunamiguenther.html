@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disposition Management System - Projektdokumentation</title>
     <link rel="stylesheet" href="tsunamiStyle.css">
+    <script src="tsunami_script.js" defer></script>
 </head>
 <body>
     <header>
@@ -460,23 +461,5 @@
     <footer>
         <p>&copy; 2025 TsunamiGuenther. Alle Rechte vorbehalten.</p>
     </footer>
-
-    <script>
-        // Header Scroll Animation
-        const header = document.querySelector('header');
-        let lastScroll = 0;
-        
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-    </script>
 </body>
 </html>
