@@ -1,5 +1,7 @@
 # TsunamiGuenther_P - Disposition Management System
 
+**Von Frank Guenther und Christian Pitz**
+
 Projektdokumentation für das Odoo 18 Disposition Management System. Diese Website ist optimiert für das Hosting bei Strato.
 
 ## 📋 Projektbeschreibung
