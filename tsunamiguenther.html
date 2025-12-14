@@ -460,5 +460,23 @@
     <footer>
         <p>&copy; 2025 TsunamiGuenther. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script>
+        // Header Scroll Animation
+        const header = document.querySelector('header');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
 </body>
 </html>
